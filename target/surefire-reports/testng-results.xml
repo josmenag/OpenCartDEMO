@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2020-06-20T22:43:52 CST" name="Account related Suite" finished-at="2020-06-20T22:44:11 CST" duration-ms="19528">
+    <groups>
+    </groups>
+    <test started-at="2020-06-20T22:43:52 CST" name="Login Functionality" finished-at="2020-06-20T22:44:11 CST" duration-ms="19528">
+      <class name="TestAccount">
+        <test-method signature="testLoginSuccessful()[pri:0, instance:TestAccount@5f577419]" started-at="2020-06-20T22:43:52 CST" name="testLoginSuccessful" description="Test Successful Login" finished-at="2020-06-20T22:44:02 CST" duration-ms="10352" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLoginSuccessful -->
+        <test-method signature="testLoginUnsuccessful()[pri:0, instance:TestAccount@5f577419]" started-at="2020-06-20T22:44:02 CST" name="testLoginUnsuccessful" description="Test Unsuccessful Login" finished-at="2020-06-20T22:44:11 CST" duration-ms="9038" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLoginUnsuccessful -->
+      </class> <!-- TestAccount -->
+    </test> <!-- Login Functionality -->
+  </suite> <!-- Account related Suite -->
+</testng-results>
