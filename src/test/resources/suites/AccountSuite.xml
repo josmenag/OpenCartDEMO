@@ -4,7 +4,7 @@
 <suite name="Account related Suite">
     <test name="Login Functionality">
         <classes>
-            <class name="TestAccount"></class>
+            <class name="DemoAccount"></class>
         </classes>
     </test>
 
