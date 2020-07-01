@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Account related Suite]" guice-stage="DEVELOPMENT" verbose="0">
+  <parameter name="browser" value="chrome"/>
+  <test thread-count="5" name="Login Functionality - Chrome(failed)" verbose="0">
+    <parameter name="password" value="hola"/>
+    <parameter name="browser" value="firefox"/>
+    <parameter name="email" value="hola@hola.com"/>
+    <groups>
+      <run>
+        <include name="successful"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="TestAccount">
+        <methods>
+          <include name="tearDownMethod"/>
+          <include name="Test_Login_Successful"/>
+        </methods>
+      </class> <!-- TestAccount -->
+    </classes>
+  </test> <!-- Login Functionality - Chrome(failed) -->
+  <test thread-count="5" name="Login Functionality - Firefox(failed)" verbose="0">
+    <parameter name="password" value="hola"/>
+    <parameter name="email" value="holasx@failure.com"/>
+    <groups>
+      <run>
+        <include name="failure"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="TestAccount">
+        <methods>
+          <include name="tearDownMethod"/>
+          <include name="Test_Login_Unsuccessful"/>
+        </methods>
+      </class> <!-- TestAccount -->
+    </classes>
+  </test> <!-- Login Functionality - Firefox(failed) -->
+</suite> <!-- Failed suite [Account related Suite] -->

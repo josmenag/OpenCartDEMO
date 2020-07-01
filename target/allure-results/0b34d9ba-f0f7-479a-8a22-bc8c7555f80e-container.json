@@ -1,1 +1,0 @@
-{"uuid":"0b34d9ba-f0f7-479a-8a22-bc8c7555f80e","name":"Login Functionality-Firefox","children":["72d31c94-3f1e-494c-8972-2d9419f50846"],"befores":[{"name":"setUpTest","status":"passed","stage":"finished","description":"","steps":[],"attachments":[],"parameters":[],"start":1593578224543,"stop":1593578224555}],"afters":[],"links":[],"start":1593578224540,"stop":1593578236711}
