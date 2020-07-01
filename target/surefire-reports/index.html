@@ -91,7 +91,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">2 methods,   2 passed</span>
+                    <span class="method-stats">1 method,   1 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -102,12 +102,7 @@
                     <div class="method-list-content passed suite-Account_related_Suite">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Account_related_Suite" title="TestAccount" class="method navigator-link" hash-for-method="testLoginSuccessful">testLoginSuccessful</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Account_related_Suite" title="TestAccount" class="method navigator-link" hash-for-method="testLoginUnsuccessful">testLoginUnsuccessful</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Account_related_Suite" title="DemoAccount" class="method navigator-link" hash-for-method="dragAndDrop">dragAndDrop</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Account_related_Suite -->
@@ -125,25 +120,14 @@
           <div class="suite-Account_related_Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">TestAccount</span>
+              <span class="class-name">DemoAccount</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="testLoginSuccessful">
-                  </a> <!-- testLoginSuccessful -->
-                  <span class="method-name">testLoginSuccessful</span>
-                  <em>
-(Test Successful Login)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="testLoginUnsuccessful">
-                  </a> <!-- testLoginUnsuccessful -->
-                  <span class="method-name">testLoginUnsuccessful</span>
-                  <em>
-(Test Unsuccessful Login)                  </em>
+                  <a name="dragAndDrop">
+                  </a> <!-- dragAndDrop -->
+                  <span class="method-name">dragAndDrop</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -151,7 +135,7 @@
         </div> <!-- panel Account_related_Suite -->
         <div panel-name="test-xml-Account_related_Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">/Users/jose.mendez/IdeaProjects/OpenCartDEMOTechGround/src/test/resources/suites/AccountSuite.xml</span>
+            <span class="header-content">/Users/jose.mendez/Documents/repositorios/OpenCartDEMO/src/test/resources/suites/AccountSuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -160,7 +144,7 @@
 &lt;suite name=&quot;Account related Suite&quot; guice-stage=&quot;DEVELOPMENT&quot; verbose=&quot;0&quot;&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;Login Functionality&quot; verbose=&quot;0&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;TestAccount&quot;/&gt;
+      &lt;class name=&quot;DemoAccount&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Login Functionality --&gt;
 &lt;/suite&gt; &lt;!-- Account related Suite --&gt;
@@ -200,20 +184,16 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(2);
+data.addRows(1);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'testLoginSuccessful')
-data.setCell(0, 2, 'TestAccount')
-data.setCell(0, 3, 10352);
-data.setCell(1, 0, 1)
-data.setCell(1, 1, 'testLoginUnsuccessful')
-data.setCell(1, 2, 'TestAccount')
-data.setCell(1, 3, 9038);
+data.setCell(0, 1, 'dragAndDrop')
+data.setCell(0, 2, 'DemoAccount')
+data.setCell(0, 3, 5476);
 window.suiteTableData['Account_related_Suite']= { tableData: data, tableDiv: 'times-div-Account_related_Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 19 seconds</span>
+              <span class="suite-total-time">Total running time: 5 seconds</span>
               <div id="times-div-Account_related_Suite">
               </div> <!-- times-div-Account_related_Suite -->
             </div> <!-- times-div -->
@@ -228,9 +208,18 @@ return data;
         </div> <!-- panel -->
         <div panel-name="ignored-methods-Account_related_Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">0 ignored methods</span>
+            <span class="header-content">2 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">DemoAccount</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">test_capabilities</span>
+                <br/>
+                <span class="ignored-method-name">test_waits</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
         <div panel-name="chronological-Account_related_Suite" class="panel">
@@ -239,14 +228,14 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">TestAccount</div> <!-- chronological-class-name -->
-              <div class="test-method">
-                <span class="method-name">testLoginSuccessful</span>
+              <div class="chronological-class-name">DemoAccount</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">setUp</span>
                 <span class="method-start">0 ms</span>
-              </div> <!-- test-method -->
+              </div> <!-- configuration-test before -->
               <div class="test-method">
-                <span class="method-name">testLoginUnsuccessful</span>
-                <span class="method-start">10436 ms</span>
+                <span class="method-name">dragAndDrop</span>
+                <span class="method-start">482 ms</span>
               </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
