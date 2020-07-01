@@ -2,9 +2,26 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 
 <suite name="Account related Suite">
-    <test name="Login Functionality">
+    <parameter name="browser" value="chrome"></parameter>
+    <test name="Login Functionality-Chrome">
+        <groups>
+            <run>
+                <include name="successfull"></include>
+            </run>
+        </groups>
         <classes>
-            <class name="DemoAccount"></class>
+            <class name="TestAccount"></class>
+        </classes>
+    </test>
+    <test name="Login Functionality-Firefox">
+        <groups>
+            <run>
+                <include name="failure"></include>
+            </run>
+        </groups>
+        <parameter name="browser" value="firefox"></parameter>
+        <classes>
+            <class name="TestAccount"></class>
         </classes>
     </test>
 

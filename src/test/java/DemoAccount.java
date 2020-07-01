@@ -19,7 +19,7 @@ import org.testng.annotations.Test;
 import javax.swing.*;
 import java.util.concurrent.TimeUnit;
 
-public class DemoAccount {
+public class DemoAccount extends BaseClass{
 
     @BeforeTest
     public void setUp(){
@@ -83,7 +83,6 @@ public class DemoAccount {
     }
 
 
-    // este es el de cross
 
 
 }
