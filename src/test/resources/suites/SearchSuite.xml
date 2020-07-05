@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="Search related Suite">
+    <parameter name="browser" value="chrome"></parameter>
+    <test name="Search Functionality - Chrome">
+        <parameter name="expectedResults" value="3"></parameter>
+        <parameter name="searchCriteria" value="macbook"></parameter>
+        <classes>
+            <class name="SearchTests"></class>
+        </classes>
+    </test>
+    
+</suite>

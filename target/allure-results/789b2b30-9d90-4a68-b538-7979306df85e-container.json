@@ -1,0 +1,1 @@
+{"uuid":"789b2b30-9d90-4a68-b538-7979306df85e","name":"Search Functionality - Chrome","children":["68b7896d-0e70-4bb4-bd7b-c1acce01d04c"],"befores":[{"name":"setupTest","status":"passed","stage":"finished","description":"","steps":[],"attachments":[],"parameters":[],"start":1593910484282,"stop":1593910485968}],"afters":[],"links":[],"start":1593910484242,"stop":1593910521851}

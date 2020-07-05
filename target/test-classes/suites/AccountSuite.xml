@@ -7,11 +7,7 @@
         <parameter name="browser" value="firefox"></parameter>
         <parameter name="email" value="hola@hola.com"></parameter>
         <parameter name="password" value="hola"></parameter>
-        <groups>
-            <run>
-                <include name="successful"></include>
-            </run>
-        </groups>
+
         <classes>
             <class name="TestAccount"></class>
         </classes>
@@ -20,11 +16,7 @@
     <test name="Login Functionality - Firefox">
         <parameter name="email" value="holasx@failure.com"></parameter>
         <parameter name="password" value="hola"></parameter>
-        <groups>
-            <run>
-                <include name="failure"></include>
-            </run>
-        </groups>
+
         <classes>
             <class name="TestAccount"></class>
         </classes>

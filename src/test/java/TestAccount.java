@@ -13,8 +13,9 @@ import java.util.concurrent.TimeUnit;
 public class TestAccount extends BaseClass{
 
     @Description("Test that login feature works fine")
-    @Test(description = "Test Login Success", groups = "successful")
-    public void Test_Login_Successful(){
+    @Test(description = "Test Login Success")
+    @Parameters({"email","password"})
+    public void Test_Login_Successful(@Optional("hola@hola.com") String email, @Optional("hola") String password){
         System.out.println("*** Test");
 
         // go to login page
@@ -37,7 +38,7 @@ public class TestAccount extends BaseClass{
     }
 
     @Description("Test that login feature works fine when incorrect username")
-    @Test(description = "Test Login Fail", groups = "failure")
+    @Test(description = "Test Login Fail")
     public void Test_Login_Unsuccessful(){
         System.out.println("*** Test");
 

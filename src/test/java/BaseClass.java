@@ -8,8 +8,8 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.annotations.*;
 
+import java.net.MalformedURLException;
 import java.util.concurrent.TimeUnit;
-
 
 public class BaseClass {
 
@@ -27,9 +27,9 @@ public class BaseClass {
         WebDriverManager.firefoxdriver().setup();
     }
 
-    @Parameters({"browser","email","password"})
-    @BeforeMethod(onlyForGroups = "account")
-    public void setupMethod(@Optional String browser, @Optional String email, @Optional  String password){
+    @Parameters({"browser"})
+    @BeforeMethod(alwaysRun = true)
+    public void setupMethod(@Optional("chrome") String browser) throws MalformedURLException {
 
         this.email = email;
         this.password = password;
@@ -37,14 +37,7 @@ public class BaseClass {
         setInitialConfiguration(browser);
     }
 
-    @Parameters({"browser","searchCriteria","expectedResults"})
-    @BeforeMethod(onlyForGroups = "search")
-    public void setupMethodSearch(String browser, String searchCriteria, String expectedResults){
-        this.searchCriteria = searchCriteria;
-        this.expectedResults = Integer.parseInt(expectedResults);
 
-        setInitialConfiguration(browser);
-    }
 
     @AfterMethod(alwaysRun = true)
     public void tearDownMethod(){
