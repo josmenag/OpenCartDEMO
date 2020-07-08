@@ -2,24 +2,16 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 
 <suite name="Account related Suite">
-    <parameter name="browser" value="chrome"></parameter>
+    <parameter name="browser" value="Chrome"></parameter>
     <test name="Login Functionality - Chrome">
-        <parameter name="browser" value="firefox"></parameter>
-        <parameter name="email" value="hola@hola.com"></parameter>
-        <parameter name="password" value="hola"></parameter>
-
         <classes>
-            <class name="TestAccount"></class>
+            <class name="selenium.AccountTests">
+                <methods>
+                    <include name="Test_Login_Successful"></include>
+                </methods>
+            </class>
         </classes>
     </test>
 
-    <test name="Login Functionality - Firefox">
-        <parameter name="email" value="holasx@failure.com"></parameter>
-        <parameter name="password" value="hola"></parameter>
-
-        <classes>
-            <class name="TestAccount"></class>
-        </classes>
-    </test>
 
 </suite>

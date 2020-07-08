@@ -1,0 +1,14 @@
+{
+  "dataSet": [
+    {
+      "email": "hola@hola.com",
+      "password": "hola",
+      "shouldLogin" : true
+    },
+    {
+      "email": "hola@holafake.com",
+      "password": "holas",
+      "shouldLogin" : false
+    }
+  ]
+}

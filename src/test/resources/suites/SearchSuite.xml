@@ -4,11 +4,8 @@
 <suite name="Search related Suite">
     <parameter name="browser" value="chrome"></parameter>
     <test name="Search Functionality - Chrome">
-        <parameter name="expectedResults" value="3"></parameter>
-        <parameter name="searchCriteria" value="macbook"></parameter>
         <classes>
-            <class name="SearchTests"></class>
+            <class name="selenium.SearchTests"></class>
         </classes>
     </test>
-    
 </suite>

@@ -1,0 +1,12 @@
+{
+  "dataSet": [
+    {
+      "searchCriteria": "macbook",
+      "expectedCriteria": "3"
+    },
+    {
+      "searchCriteria": "creativa",
+      "expectedCriteria": "0"
+    }
+  ]
+}

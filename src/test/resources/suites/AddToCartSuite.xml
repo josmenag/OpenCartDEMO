@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="Tests Related to Add to Cart">
+    <parameter name="browser" value="Chrome"></parameter>
+    <test name="Add a product from Home Page and add it to a cart">
+        <classes>
+            <class name="selenium.AddToCartTests">
+            </class>
+        </classes>
+    </test>
+
+
+</suite>
