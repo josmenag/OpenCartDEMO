@@ -6,6 +6,7 @@ import com.google.gson.JsonElement;
 import com.google.gson.JsonParser;
 import org.testng.annotations.DataProvider;
 import pojo.ProductProfile;
+import pojo.SearchData;
 import pojo.UserAccount;
 
 import java.io.FileNotFoundException;
@@ -15,7 +16,7 @@ import java.util.List;
 public class ProductsProvider {
 
     @DataProvider(name="getProductsDataFromCode")
-    private Object [][] getSearchData(){
+    private Object [][] getProductsDataFromCode(){
         return new Object[][]{
                 {new ProductProfile("iPhone","40", "123.20", "106.04", "92.93")},
                 {new ProductProfile("iMac","41", "122.00", "105.01", "92.03")}
@@ -26,12 +27,14 @@ public class ProductsProvider {
 
 
     @DataProvider(name = "getProductsDataFromJson")
-    private Object[][] getSearchDataFromJson() throws FileNotFoundException {
+    private Object[][] getProductsDataFromJson() throws FileNotFoundException {
 
         JsonElement jsonData = new JsonParser().parse(new FileReader("src/test/resources/data/productsAndPrices.json"));
-        JsonElement dataSet = jsonData.getAsJsonObject().get("dataSet");
-        List<ProductProfile> testData = new Gson().fromJson(dataSet, new TypeToken<List<ProductProfile>>() {}.getType());
 
+        JsonElement dataSet = jsonData.getAsJsonObject().get("dataSet");
+
+        List<ProductProfile> testData = new Gson().fromJson(dataSet, new TypeToken<List<ProductProfile>>() {}.getType());
+        System.out.println(jsonData.toString());
         Object[][] returnValue = new Object[testData.size()][1];
         int index = 0;
         for(Object[] each : returnValue){

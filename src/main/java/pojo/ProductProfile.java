@@ -9,11 +9,11 @@ public class ProductProfile {
     private String pnd;
 
     public ProductProfile(String productName, String id, String usd, String eur, String pnd){
-        this.setProductName(productName);
-        this.setId(id);
-        this.setUsd(usd);
-        this.setEur(eur);
-        this.setPnd(pnd);
+        this.productName = productName;
+        this.id = id;
+        this.usd = usd;
+        this.eur = eur;
+        this.pnd = pnd;
     }
 
 
@@ -21,16 +21,8 @@ public class ProductProfile {
         return usd;
     }
 
-    public void setUsd(String usd) {
-        this.usd = usd;
-    }
-
     public String getProductName() {
         return productName;
-    }
-
-    public void setProductName(String productName) {
-        this.productName = productName;
     }
 
     public String getId() {
@@ -45,15 +37,8 @@ public class ProductProfile {
         return eur;
     }
 
-    public void setEur(String eur) {
-        this.eur = eur;
-    }
 
     public String getPnd() {
         return pnd;
-    }
-
-    public void setPnd(String pnd) {
-        this.pnd = pnd;
     }
 }

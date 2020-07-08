@@ -10,7 +10,7 @@ import pojo.SearchData;
 
 public class ProductTests extends BaseClass{
 
-    @Test(dataProvider = "getProductsDataFromCode", dataProviderClass = ProductsProvider.class)
+    @Test(dataProvider = "getProductsDataFromJson", dataProviderClass = ProductsProvider.class)
     @Parameters({"product","id","usd","eur","pnd"})
     public void Test_Correct_Prices(ProductProfile testProduct){
 
